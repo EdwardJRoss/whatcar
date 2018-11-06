@@ -1,0 +1,219 @@
+/*
+ * Globals
+ */
+/* Image upload */
+
+img {
+    width: 100%;
+}
+
+div.carbutton {
+  /* IMPORTANT STUFF */
+  overflow: hidden;
+  position: relative;
+  cursor:   pointer;
+}
+
+.preview-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.preview-frame {
+    position: relvative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* https://stackoverflow.com/questions/43333495/text-over-image-responsive */
+
+/* TODO: Cropping */
+/* TODO: Responsive */
+.preview-image {
+    position: absolute;
+    top: 9%;
+    left: 11%;
+    width: 79%;
+    height: 68%;
+}
+
+.preview-text {
+    font-size: 2rem;
+    max-height: calc(100% - 8rem);
+    line-height: 1.7rem;
+    position: absolute;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    top: 89%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+}
+
+
+input#carfile {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 100px;
+  z-index: 2;
+
+  opacity: 0.0; /* Standard: FF gt 1.5, Opera, Safari */
+  filter: alpha(opacity=0); /* IE lt 8 */
+  -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+  -khtml-opacity: 0.0; /* Safari 1.x */
+  -moz-opacity: 0.0; /* FF lt 1.5, Netscape */
+}
+/* End */
+
+
+
+
+.image-preview {
+  width: 60%;
+  margin: auto;
+}
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+p, div {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-image:url(../img/congruent_pentagon.png);
+}
+
+.custom-file-label {
+    width: 50%;
+    margin: auto;
+    background: #222;
+    color: #fff;
+}
+
+.custom-file-input::after {
+    content: "Button Text";
+}
+
+.data-dz-thumbnail {
+    margin: auto;
+    background: #000;
+
+}
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #222;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #333;
+  border: .05rem solid #333;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+.col {
+    border: 0.25rem solid;
+    border-color: #222;
+}
+
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #222;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  color: #777;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: #777;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #222;
+  border-bottom-color: #222;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: #777;
+}

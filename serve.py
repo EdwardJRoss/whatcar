@@ -24,16 +24,19 @@ def get_learner():
     learn.load('car49-final1')
     return learn
 
+
+LEARN = get_learner()
+
 ################################################################################
 ## Model scoring
 ################################################################################
 
-def predict_image_from_bytes(learn, bytes):
+def predict_image_from_bytes(bytes):
     img = open_image(BytesIO(bytes))
-    pred_class, _pred_idx, outputs = learn.predict(img)
+    pred_class, _pred_idx, outputs = LEARN.predict(img)
     return JSONResponse({
         "predictions": sorted(
-            zip(app.learn.data.classes, map(float, outputs)),
+            zip(LEARN.data.classes, map(float, outputs)),
             key=lambda p: p[1],
             reverse=True
         )
@@ -57,13 +60,13 @@ app = Starlette()
 async def upload(request):
     data = await request.form()
     bytes = await (data["file"].read())
-    return predict_image_from_bytes(app.learn, bytes)
+    return predict_image_from_bytes(bytes)
 
 
 @app.route("/classify-url", methods=["GET"])
 async def classify_url(request):
     bytes = await get_bytes(request.query_params["url"])
-    return predict_image_from_bytes(app.learn, bytes)
+    return predict_image_from_bytes(bytes)
 
 @app.route('/css/{f}')
 def css(request):
@@ -83,9 +86,5 @@ def index(request):
 def about(request):
     return FileResponse('about.html')
 
-@app.on_event('startup')
-def startup():
-    app.learn = get_learner()
-
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8008)
+    uvicorn.run(app, host="0.0.0.0", port=80)

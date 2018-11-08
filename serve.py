@@ -15,13 +15,15 @@ from fastai.vision.image import open_image
 ################################################################################
 
 def get_learner():
-    with open('classes.csv') as f:
+    with open('class_names.csv') as f:
+        # Skip header
+        f.readline()
         classes = [line[0] for line in csv.reader(f)]
 
     # TODO: Can we make this faster/lighter?
     data = ImageDataBunch.single_from_classes(".", classes, tfms=get_transforms(), size=224).normalize(imagenet_stats)
     learn = create_cnn(data, resnet34, pretrained=False)
-    learn.load('car49-final1')
+    learn.load('makemodel-392')
     return learn
 
 

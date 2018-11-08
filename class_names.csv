@@ -1,0 +1,393 @@
+class
+Honda Civic
+Honda Accord
+Toyota Camry
+Ford Mustang
+Toyota Corolla
+Chevrolet Silverado
+Ford F150
+Nissan Altima
+Ford Focus
+Ford Ranger
+Jeep Grand Cherokee
+Toyota Landcruiser
+Holden Commodore
+Volkswagen Jetta
+Mazda 3
+Honda Odyssey
+Nissan Maxima
+Chevrolet Corvette
+Toyota Hilux
+Volkswagen Golf
+Volkswagen Passat
+Honda CR-V
+Ford F250
+Subaru Forester
+Subaru Impreza
+Hyundai Elantra
+Audi A4
+Nissan Navara
+Mitsubishi Lancer
+Ford Escape
+Toyota RAV4
+Chevrolet Camaro
+Ford Falcon
+Mazda 6
+Hyundai Sonata
+Jeep Wrangler
+Subaru Outback
+Nissan Pathfinder
+Mitsubishi Triton
+BMW X5
+Hyundai Accent
+Holden Cruze
+Holden Captiva
+Nissan X-Trail
+Hyundai i30
+Kia Rio
+Mitsubishi Outlander
+Ford Territory
+Land Rover Range Rover Sport
+Jeep Cherokee
+Nissan Patrol
+BMW 325i
+Holden Colorado
+Toyota Prius
+Mazda CX-5
+Chrysler 300
+Toyota Yaris
+Mazda BT-50
+Toyota Kluger
+Holden Astra
+Nissan Murano
+Volkswagen Beetle
+Mazda 2
+Suzuki Swift
+Mitsubishi Pajero
+Holden Ute
+Hyundai Tucson
+Holden Barina
+Kia Cerato
+Toyota Avalon
+Kia Sorento
+Mitsubishi ASX
+BMW 328i
+Isuzu D-MAX
+Audi A6
+Honda Jazz
+Nissan Pulsar
+Toyota Hiace
+Kia Optima
+Kia Sportage
+Nissan 350Z
+Lexus IS250
+Ford Fiesta
+Holden Rodeo
+Hyundai Getz
+Subaru Liberty
+Ford Falcon Ute
+Volvo XC90
+Volkswagen Tiguan
+Volvo S60
+BMW X3
+Mercedes-Benz E320
+Volkswagen Amarok
+Hyundai Tiburon
+Chrysler PT Cruiser
+Dodge Caliber
+BMW M3
+Audi A3
+Mazda Tribute
+Volkswagen Polo
+Subaru WRX
+Toyota Celica
+BMW 530i
+BMW 335i
+BMW 528i
+Saab 9-3
+Holden Calais
+Volvo S40
+Honda Prelude
+BMW 320i
+Volkswagen Touareg
+Mazda CX-9
+Jeep Compass
+Mazda RX-8
+BMW 525i
+BMW 323i
+Porsche Boxster
+Jeep Patriot
+Toyota Aurion
+MINI Hatch
+Mercedes-Benz E350
+Audi A5
+Nissan QASHQAI
+Hyundai ix35
+Hyundai Santa Fe
+BMW 330i
+Porsche Cayenne
+Mazda CX-7
+Audi Q5
+Audi Q7
+Lexus GS300
+Honda Accord Euro
+Toyota 86
+Mercedes-Benz ML350
+Dodge Journey
+Mercedes-Benz C300
+Mercedes-Benz C250
+Hyundai iLoad
+Jaguar X-Type
+Audi S4
+Nissan Skyline
+Subaru XV
+Porsche 911
+Holden Special Vehicles Clubsport
+Audi TT
+Suzuki Grand Vitara
+Land Rover Discovery
+Mercedes-Benz C63
+Nissan Dualis
+Ford Mondeo
+Mercedes-Benz ML320
+Hyundai Veloster
+Mercedes-Benz C200
+Renault Megane
+BMW 535i
+Mazda CX-3
+Mitsubishi Mirage
+BMW X1
+BMW 318i
+BMW Z4
+Audi A8
+Dodge Nitro
+Mercedes-Benz S500
+Volkswagen Transporter
+Toyota Tarago
+Mercedes-Benz Sprinter
+Toyota Echo
+Mercedes-Benz C200 Kompressor
+Mazda MX-5
+SKODA Octavia
+Volvo XC70
+BMW 740i
+Mazda RX-7
+Mitsubishi Pajero Sport
+Nissan 370Z
+Volkswagen Caddy
+BMW 330Ci
+Mercedes-Benz CLK320
+Mazda 323
+Kia Carnival
+Hyundai i20
+Ford Transit
+Suzuki SX4
+Volvo XC60
+Audi A1
+Lexus RX350
+Nissan Elgrand
+Toyota Supra
+Holden Berlina
+Mercedes-Benz C280
+Volkswagen Eos
+Nissan JUKE
+Holden Trax
+Audi S3
+BMW 320d
+Lexus IS350
+Holden Special Vehicles GTS
+Holden Special Vehicles Maloo
+BMW M5
+Volvo V40
+Honda HR-V
+BMW 120i
+Isuzu MU-X
+Renault Koleos
+Ford Fairlane
+Volvo C70
+Ford Performance Vehicles F6
+Ford Kuga
+Porsche 911 Carrera
+Subaru BRZ
+BMW 135i
+Mitsubishi Magna
+Renault Clio
+Lexus RX330
+Mercedes-Benz Vito
+Toyota FJ Cruiser
+BMW 125i
+Toyota Estima
+Audi Q3
+Holden Caprice
+BMW 325Ci
+Mercedes-Benz ML500
+Nissan Micra
+Alfa Romeo Giulietta
+Land Rover Discovery Sport
+BMW 118i
+Mercedes-Benz C180 Kompressor
+BMW X6
+Mitsubishi Challenger
+Holden Statesman
+Suzuki Vitara
+Ford Fairmont
+Mercedes-Benz C250 CDI
+Nissan Tiida
+Land Rover Defender
+Subaru Tribeca
+Peugeot 308
+Kia Grand Carnival
+Hyundai iMax
+Jaguar XF
+Mercedes-Benz A250
+Holden Monaro
+Mercedes-Benz B200
+Mercedes-Benz CLA250
+Renault Trafic
+Mercedes-Benz A45
+Peugeot 307
+Mercedes-Benz CLA45
+Audi S5
+Fiat 500
+Hyundai i40
+Holden Crewman
+Mercedes-Benz GLC250
+Volkswagen Multivan
+Nissan 200SX
+Land Rover Discovery 4
+Alfa Romeo 159
+Mercedes-Benz CLA200
+Porsche Macan
+Mercedes-Benz CLK350
+Renault Master
+Mitsubishi 380
+Ford Laser
+BMW 520d
+Ford Everest
+Mercedes-Benz C350
+Peugeot 207
+Suzuki Alto
+Audi SQ5
+Mercedes-Benz SLK350
+BMW X4
+Ford Courier
+Holden Viva
+Mazda Bravo
+Land Rover Discovery 3
+Renault Kangoo
+SKODA Fabia
+Volkswagen Kombi Transporter
+Holden Trailblazer
+Mitsubishi Express
+Audi RS3
+Mercedes-Benz B180
+Ford Performance Vehicles GT
+Mercedes-Benz ML250
+MINI Cabrio
+Volkswagen Scirocco
+Nissan Cube
+BMW M4
+Honda City
+Mercedes-Benz C180
+Mitsubishi Colt
+Holden Special Vehicles Senator
+Hyundai i45
+Chrysler 300c
+Lexus NX
+Nissan GT-R
+Citroen C4
+Land Rover Freelander 2
+MG B
+Mercedes-Benz ML63
+BMW 118d
+Volvo C30
+Mercedes-Benz E250 CDI
+Mercedes-Benz E63
+Toyota Fortuner
+SKODA Superb
+BMW 220i
+Mercedes-Benz GLA250
+Mercedes-Benz A200
+Peugeot 407
+Fiat Ducato
+BMW 428i
+Peugeot 206
+Ford EcoSport
+Mercedes-Benz A180
+Audi R8
+Mercedes-Benz E250
+Mitsubishi Delica
+Mercedes-Benz E200
+Mercedes-Benz ML320 CDI
+Ford Festiva
+Mercedes-Benz C220 CDI
+Mercedes-Benz E280
+Honda Integra
+Suzuki Kizashi
+Jaguar XE
+Holden Colorado 7
+Volkswagen Crafter
+MINI Countryman
+Alfa Romeo MiTo
+Lexus CT200h
+Porsche Cayman
+Chrysler Grand Voyager
+Holden Kingswood
+Citroen C5
+Mercedes-Benz E250 CGI
+BMW 330d
+Peugeot 208
+Lexus RX450h
+Ford Transit Custom
+Holden Jackaroo
+Holden Barina Spark
+Suzuki Ignis
+Holden Vectra
+SKODA Rapid
+Mercedes-Benz S350
+BMW M235i
+Renault Captur
+Mercedes-Benz GLA180
+Holden Adventra
+Bentley Continental
+Mercedes-Benz C250 CGI
+Mercedes-Benz E240
+BMW M135i
+Mercedes-Benz CLC200 Kompressor
+Citroen Berlingo
+Fiat Freemont
+BMW 320Ci
+BMW 316i
+Great Wall V240
+Mercedes-Benz C200 CDI
+Peugeot 3008
+Toyota Crown
+Mercedes-Benz ML300 CDI
+Toyota Avensis Verso
+Nissan Silvia
+Mercedes-Benz C200 CGI
+BMW 116i
+BMW 420i
+Alfa Romeo 156
+Mercedes-Benz CLK200 Kompressor
+Holden Malibu
+Citroen C3
+Volkswagen Bora
+Toyota C-HR
+Mercedes-Benz E220 CDI
+Hyundai Terracan
+Ford Performance Vehicles GS
+Jaguar XJ6
+Suzuki Jimny
+Holden Special Vehicles Grange
+MINI Clubman
+Lexus RC
+Mazda 121
+Holden Zafira
+Holden Special Vehicles Coupe
+BMW M2
+Holden Epica
+Volvo V40 Cross Country
+Fiat 500X
+Mercedes-Benz ML350 CDI
+Maserati Ghibli

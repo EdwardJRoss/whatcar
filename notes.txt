@@ -1,0 +1,24 @@
+Styling:
+https://24ways.org/2012/how-to-make-your-site-look-half-decent/
+
+Car dataset:
+Open: https://ai.stanford.edu/~jkrause/cars/car_dataset.html
+Non-commercial: http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html
+Open: http://vmmrdb.cecsresearch.org/
+
+pnvijay: Error rate of 18% on Stanford - https://github.com/pnvijay/fastaiv3/blob/master/tmp_CarDataset.ipynb
+
+arunoda: 10 car models, 150 images per car
+- https://arunoda.me/blog/getting-started-with-fastai
+- https://github.com/arunoda/fastai-courses/blob/master/dl1/projects/vehicles.ipynb
+
+
+Polaroids:
+http://www.fuzzimo.com/free-hi-res-blank-polaroid-frames/
+
+Car Sillhoutte:
+https://commons.wikimedia.org/wiki/File:Car.svg
+
+
+Google Image Selector:
+http://bskog.com/ai/2018/10/30/creating-dataset-google-image-search-results/

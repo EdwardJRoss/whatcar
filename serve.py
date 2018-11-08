@@ -59,7 +59,8 @@ app = Starlette()
 @app.route("/upload", methods=["POST"])
 async def upload(request):
     data = await request.form()
-    bytes = await (data["file"].read())
+    # Only read the first 4MB in case the file is too large and will hurt server
+    bytes = await (data["file"].read(4_000_000))
     return predict_image_from_bytes(bytes)
 
 

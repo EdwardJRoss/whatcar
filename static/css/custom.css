@@ -2,6 +2,13 @@
  * Globals
  */
 /* Image upload */
+.logo {
+    width: auto;
+    display: inline-block;
+    *display: inline; /* for older IE */
+    *zoom: 1; /* for older IE */
+}
+
 
 img {
     width: 100%;

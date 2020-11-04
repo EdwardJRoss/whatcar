@@ -17,7 +17,6 @@ from pathlib import Path
 ################################################################################
 
 def get_learner():
-    download_learner()
     with open('class_names.csv') as f:
         # Skip header
         f.readline()
@@ -29,13 +28,6 @@ def get_learner():
     learn.load('makemodel-392')
     return learn
 
-
-URL = 'https://storage.googleapis.com/whatcar-model/makemodel-392.pth'
-def download_learner(force=False):
-    path = Path('models/makemodel-392.pth')
-    if force or not path.exists():
-        path.parent.mkdir(exist_ok=True)
-        urlretrieve(URL, path)
 
 LEARN = get_learner()
 

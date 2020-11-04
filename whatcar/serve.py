@@ -24,7 +24,7 @@ def get_learner():
         classes = [line[0] for line in csv.reader(f)]
 
     # TODO: Can we make this faster/lighter?
-    data = ImageDataBunch.single_from_classes(".", classes, tfms=get_transforms(), size=224).normalize(imagenet_stats)
+    data = ImageDataBunch.single_from_classes(".", classes, ds_tfms=get_transforms(), size=224).normalize(imagenet_stats)
     learn = create_cnn(data, resnet34, pretrained=False)
     learn.load('makemodel-392')
     return learn

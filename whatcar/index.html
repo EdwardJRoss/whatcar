@@ -42,7 +42,7 @@
         <p class="lead">Upload a photo by clicking below and we'll tell you WhatCar it is</p>
 
         <div class="carbutton preview-container">
-          <input id="carfile" type="file" name="file" onchange="doall(this)">
+          <input id="carfile" type="file" name="file" accept="image/*" capture="environment" onchange="doall(this)">
           <img class="preview-frame" id="preview-frame" src="img/polaroid.png"/>
           <img class="preview-image" src="img/car.svg" alt="Uploaded Image"/>
           <h4 class="preview-text" id="image-label">What car?</p>

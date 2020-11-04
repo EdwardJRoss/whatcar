@@ -42,9 +42,9 @@
         <p class="lead">Upload a photo by clicking below and we'll tell you WhatCar it is</p>
 
         <div class="carbutton preview-container">
-          <input id="carfile" type="file" name="file" accept="image/*" capture="environment" onchange="doall(this)">
+          <input id="carfile" type="file" name="file" accept="image/*" capture="environment" onchange="displayAndUpload(this)">
           <img class="preview-frame" id="preview-frame" src="img/polaroid.png"/>
-          <img class="preview-image" src="img/car.svg" alt="Uploaded Image"/>
+          <img id="preview-image" class="preview-image" src="img/car.svg" alt="Uploaded Image"/>
           <h4 class="preview-text" id="image-label">What car?</p>
         </div>
 
@@ -68,41 +68,33 @@
     <script>
 
 
-      function displayit() {
+      function showPrediction() {
           prediction = this.response['predictions'][0][0];
           var p = document.getElementById('image-label');
           p.textContent = prediction;
       }
 
-      function doall(input) {
-          readURL(input);
-          doit(input);
+      function displayAsImage(file) {
+          var imgURL = URL.createObjectURL(file);
+          var img = document.getElementById('preview-image');
+
+          img.onload = function() {
+              URL.revokeObjectURL(imgURL)
+          };
+
+          img.src = imgURL;
       }
 
-     function readURL(input) {
-         if (input.files && input.files[0]) {
-             var reader = new FileReader();
+      // c.f. https://w3c.github.io/html-media-capture/#example-5
+      function displayAndUpload(input) {
+          var file = input.files[0];
+          displayAsImage(file);
+          upload(file);
+      }
 
-             reader.onload = function (e) {
-                 $('.preview-image')
-                     .attr('src', e.target.result);
-             };
-
-             reader.readAsDataURL(input.files[0]);
-         }
-     }
-
-      function doit(event) {
-          var carfile = document.getElementById("carfile");
-          readURL(carfile);
-
-
-
-          var fileInput = document.getElementById('carfile');
-          var file = fileInput.files[0];
+      function upload(file) {
           var formData = new FormData()
           formData.append('file', file)
-
 
           // TODO: Turn into an animation
           var p = document.getElementById('image-label');
@@ -110,12 +102,10 @@
 
           var xhr = new XMLHttpRequest();
           xhr.responseType = 'json';
-          xhr.addEventListener('load', displayit);
+          xhr.addEventListener('load', showPrediction);
           xhr.open('POST', '/upload', true);
           xhr.send(formData);
       }
-
-
 
     </script>
 

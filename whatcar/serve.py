@@ -1,4 +1,5 @@
 import csv
+import sys
 from io import BytesIO
 import uvicorn
 import aiohttp
@@ -135,4 +136,5 @@ def about(request):
     return FileResponse('about.html')
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=80)
+    port = int(sys.argv[1])
+    uvicorn.run(app, host="0.0.0.0", port=port)

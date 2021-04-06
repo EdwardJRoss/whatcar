@@ -7,10 +7,10 @@ ENV PYTHONUNBUFFERED True
 RUN apt update
 RUN apt install -y gcc
 
-ENV INSTALL_PATH /whatcar
-RUN mkdir -p $INSTALL_PATH
+ENV APP_HOME /whatcar
+RUN mkdir -p $APP_HOME
 
-WORKDIR $INSTALL_PATH
+WORKDIR $APP_HOME
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt

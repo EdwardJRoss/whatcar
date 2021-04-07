@@ -10,15 +10,8 @@ from fastai.vision.data import ImageDataBunch, imagenet_stats
 from fastai.vision.learner import create_cnn
 from fastai.vision.models import resnet34
 from fastai.vision.image import open_image
-from urllib.request import urlretrieve
-from pathlib import Path
-import uuid
 
 IMAGE_SIZE_LIMIT_BYTES = 8_500_000
-
-IMAGE_DIR = Path('incoming/')
-IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-LABEL_PATH = Path('labels.csv')
 
 ################################################################################
 ## Model Loading
@@ -41,8 +34,6 @@ CLASSES = [c['class'] for c in LABELS]
 
 LEARN = get_learner(CLASSES)
 
-
-# TODO Class Labels
 
 ################################################################################
 ## Model scoring
@@ -70,15 +61,6 @@ async def get_bytes(url):
 
 app = Starlette()
 
-
-def add_label(bytes, label, host, user_agent):
-    name = str(uuid.uuid4())
-    with open(LABEL_PATH, 'a') as f:
-        print(f'{name}\t{label}\t{host}\t{user_agent}', file=f)
-    with open(IMAGE_DIR / name, 'wb') as f:
-        f.write(bytes)
-    return JSONResponse({'status': 'ok'})
-
 @app.route("/labels")
 async def labels(request):
     return JSONResponse(LABELS)
@@ -89,24 +71,6 @@ async def upload(request):
     # Only read the first N bytes in case the file is too large and will hurt server
     bytes = await (data["file"].read(IMAGE_SIZE_LIMIT_BYTES))
     return predict_image_from_bytes(bytes)
-
-
-
-@app.route("/submission", methods=["POST"])
-async def submit(request):
-    user_agent = request.headers['user-agent']
-    host = request.client.host
-    data = await request.form()
-    # Only read the first N bytes in case the file is too large and will hurt server
-    bytes = await (data["file"].read(IMAGE_SIZE_LIMIT_BYTES))
-    label = data["class"]
-    assert len(bytes) < IMAGE_SIZE_LIMIT_BYTES, "Image too large"
-    assert label in CLASSES, f"Invalid class: {label}"
-    # TODO: Some less hacky validation 
-    assert ('\t' not in user_agent) and '\n' not in user_agent
-    assert ('\t' not in host) and '\n' not in host
-    return add_label(bytes, label, host, user_agent)
-
 
 @app.route("/classify-url", methods=["GET"])
 async def classify_url(request):
@@ -126,10 +90,6 @@ def image(request):
 @app.route("/")
 def index(request):
     return FileResponse('index.html')
-
-@app.route("/submit")
-def index(request):
-    return FileResponse('submit.html')
 
 @app.route("/about")
 def about(request):

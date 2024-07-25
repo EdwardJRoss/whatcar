@@ -1,5 +1,5 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.0+cpu
+torch==2.2.0
 torchvision==0.8.1+cpu
 fastai==1.0.61
 responder
